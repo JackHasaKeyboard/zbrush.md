@@ -23,12 +23,12 @@
 | g                                |                  |                  | Projection Master                                                     |
 
 ### Lightbox and Spotlight
-|                                    |   |                                                                                   |
-|------------------------------------|---|-----------------------------------------------------------------------------------|
-| ,                                  |   | Show/hide Lightbox                                                                |
-| Double-click on Lightbox thumbnail |   | Load selected item (texture/alphas will be loaded into Spotlight if it is active) |
-| Shift                              | z | Turn on/off Spotlight                                                             |
-| z                                  |   | Show/hide Spotlight Dial                                                          |
+|                                    |                           |                                                                                   |
+|------------------------------------|---------------------------|-----------------------------------------------------------------------------------|
+| ,                                  |                           | Show/hide Lightbox                                                                |
+| LMB                                | LMB on lightbox thumbnail | Load selected item (texture/alphas will be loaded into Spotlight if it is active) |
+| Shift                              | z                         | Turn on/off Spotlight                                                             |
+| z                                  |                           | Show/hide Spotlight Dial                                                          |
 
 #### With a 3D mesh in Edit mode
 |       |                 |                 |                 |                                 |
@@ -51,14 +51,14 @@
 | RMB  | Drag (can be over the model) |                              | Rotate |
 
 ### Transpose
-|                             |                                        |   |   |                                                       |
-|-----------------------------|----------------------------------------|---|---|-------------------------------------------------------|
-| With a 3D mesh in Edit mode | LMB                                    | w | e | r draw the orange action line                         |
-| LMB on the mesh             |                                        |   |   | Reposition the action line aligned the surface normal |
-| LMB the end of the red      | Green or blue axis line                |   |   | Align an axis                                         |
-| Hold Spacebar               |                                        |   |   | Move action line while drawing                        |
-| LMB                         | Drag orange line or center orange ring |   |   | Move action line after drawing                        |
-| LMB                         | Drag orange end ring                   |   |   | Change action line end point position                 |
+|                             |                                        |   |   |   |                                                   |
+|-----------------------------|----------------------------------------|---|---|---|---------------------------------------------------|
+| With a 3D mesh in Edit mode | LMB                                    | w | e | r | Draw the orange action line                         |
+| LMB on the mesh             |                                        |   |   | | Reposition the action line aligned the surface normal |
+| LMB the end of the red      | Green or blue axis line                |   |   | | Align an axis                                         |
+| Hold Spacebar               |                                        |   |   | | Move action line while drawing                        |
+| LMB                         | Drag orange line or center orange ring |   |   | | Move action line after drawing                        |
+| LMB                         | Drag orange end ring                   |   |   | | Change action line end point position                 |
 
 Quick tip: in Move/Scale mode, Alt, LMB, drag on the mesh (not on action line) to move or scale mesh
 
@@ -167,7 +167,7 @@ These actions apply to the inner red or white rings of the action line. The term
 |------------------------|------------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | n                      |                        |                           | List all SubTools                                                                                                                                                   |
 | Alt                    | LMB on SubTool         |                           | Select that SubTool                                                                                                                                                 |
-| Shift                  | Alt                    | Click on selected SubTool | Frame that SubTool (Note this option can be set in the Preferences > Edit > Enable Auto Center slider; 0 = off; 1 = Alt[comma]LMB; 2 = Shift[comma]Alt[comma]click) |
+| Shift                  | Alt                    | LMB on selected SubTool | Frame that SubTool (Note this option can be set in the Preferences > Edit > Enable Auto Center slider; 0 = off; 1 = Alt,LMB; 2 = Shift,Alt,LMB) |
 | LMB on paintbrush icon |                        |                           | Toggle Polypaint Colorize                                                                                                                                           |
 | Shift                  | LMB on paintbrush icon |                           | Toggle Polypaint Colorize for all SubTools                                                                                                                          |
 
@@ -180,7 +180,7 @@ These actions apply to the inner red or white rings of the action line. The term
 | Ctrl  | e (partially hidden mesh) | Edge Loop  |
 
 #### Dynamesh
-In Edit > Draw mode
+In Edit > Draw mode:
 
 |      |                 |                        |
 |------|-----------------|------------------------|
@@ -200,14 +200,16 @@ In Edit > Draw mode
 | Ctrl                                       | a               |                 |                              | Mask All                                               |
 | Hold Ctrl while selecting brush from popup |                 |                 |                              | Select Masking Brush                                   |
 | Ctrl (hold down)                           |                 |                 |                              | Paint mask on object (alphas/strokes can be used)      |
-| Ctrl                                       | Alt (hold down) |                 | Delete or paint reverse mask |                                                        |
+| Ctrl                                       | Alt (hold down) | | | Delete or paint reverse mask |                 |                                                        |
 | Ctrl                                       | LMB Background  |                 |                              | Reverse mask                                           |
 | Ctrl                                       | LMB             | Drag Background |                              | Clear Mask                                             |
 | Ctrl                                       | LMB             | Release Ctrl    | Drag (starting off mesh)     | Constant-intensity mask                                |
 | Ctrl                                       | LMB             | Drag            |                              | Alpha-intensity mask (using MaskPen or MaskRect brush) |
-| (select alpha while holding Ctrl)          |                 |                 |                              |                                                        |
-| Ctrl                                       | LMB on mesh     |                 |                              | Blur mask                                              |
-| Ctrl                                       | Alt             | LMB on mesh     |                              | Sharpen mask                                           |
+
+|                                            |                 |                 |              |
+|--------------------------------------------|-----------------|-----------------|--------------|
+| Ctrl                                       | LMB on mesh     |                 | Blur mask    |
+| Ctrl                                       | Alt             | LMB on mesh     | Sharpen mask |
 
 #### Topological Masking
 |      |     |                                   |         |                       |
@@ -261,7 +263,7 @@ In Edit > Draw mode
 | LMB             | Drag to size new ZSphere | Press Ctrl  | Drag | Add a child ZSphere and scale Link Spheres |
 | LMB Link-Sphere |                          |             |      | Insert ZSphere                             |
 
-(With Tool > Adaptive Skin > Use ClassicSkinning on:)
+(With Tool > Adaptive Skin > Use ClassicSkinning on):
 
 |     |                 |                                 |
 |-----|-----------------|---------------------------------|
@@ -309,32 +311,28 @@ In Edit > Draw mode
 | Ctrl  | b   |                    | Bake Layer               | 
 | Shift | LMB | On Layer thumbnail | Toggle all layers on/off | 
 
-(US)
+#### (US)
 
 |   |            |                                             | 
 |---|------------|---------------------------------------------| 
 | ~ | LMB canvas | Select layer on which clicked pixol resides | 
 
-(UK)
-
-|   |              |                                             | 
-|---|--------------|---------------------------------------------| 
-| @ | Click canvas | Select layer on which clicked pixol resides | 
-
-(US)
-
 |   |      |                                              | 
 |---|------|----------------------------------------------| 
 | ~ | Drag | Move layer contents up/down/sideways (X & Y) | 
 
-(UK)
+#### (UK)
 
 |   |      |                                              | 
 |---|------|----------------------------------------------| 
 | @ | Drag | Move layer contents up/down/sideways (X & Y) | 
 
+|   |              |                                             | 
+|---|--------------|---------------------------------------------| 
+| @ | Click canvas | Select layer on which clicked pixol resides | 
+
 #### Markers
-Markers will only show when Edit is turned off
+(Markers will only show when Edit is turned off)
 
 |      |   |               |
 |------|---|---------------|
@@ -358,9 +356,9 @@ Markers will only show when Edit is turned off
 | Shift                         | Ctrl                                                     | LMB on the key frame dot |                    | Store new data in existing key frame |
 | LMB                           | Drag dot off the Timeline                                |                          |                    | Delete a key frame                   |
 | Shift                         | LMB on the Timeline at the point where you want the copy |                          |                    | Copy selected key frame              |
-| Shift                         | LMB on all the key frames dots to be copied              |  then Shift              | Click the Timeline | Copy multiple key frames             |
+| Shift                         | LMB on all the key frames dots to be copied              | Shift              | LMB the Timeline | Copy multiple key frames             |
 
-At the point where you want the copies
+#### At the point where you want the copies:
 
 |       |                                  |                               |                                         |
 |-------|----------------------------------|-------------------------------|-----------------------------------------|
@@ -372,7 +370,7 @@ At the point where you want the copies
 | LMB   | Esc                              |                               | Stop the Timeline playing               |
 | Shift | Ctrl                             | LMB on the Timeline cursor    | Record Timeline as a Movie              |
 
-(set the cursor to the start first using the ←)
+(Set the cursor to the start first using ←)
 
 #### Movie
 |       |       |        |                   |
