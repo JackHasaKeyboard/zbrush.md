@@ -64,24 +64,25 @@ Quick tip: in Move/Scale mode, Alt, LMB, drag on the mesh (not on action line) t
 
 #### Inner (red/white) ring actions
 These actions apply to the inner red or white rings of the action line. The terms center or end refer to the position on the line.
-|                                   |                                  |                                             |                                     |
-|-----------------------------------|----------------------------------|---------------------------------------------|-------------------------------------|
-| w                                 |                                  | Move mode                                                                         |
-| LMB                               | Drag center                      | Move                                        |                                     |
-| Ctrl                              | LMB                              | Drag center                                 | Duplicate mesh                      |
-| Alt                               | LMB                              | Drag center or end point                    | Bend mesh                           |
-| Drag end point furthest from mesh |                                  | Stretch mesh                                                                      |
-| Drag end point next to mesh       |                                  | Flatten mesh                                                                      |
-| RMB                               | Drag end ring furthest from mesh | Inflate                                     |                                     |
-| With partially masked mesh        | Hold Ctrl and LMB                | Drag center point                           | Create Edgeloop & extrude           |
-| e                                 |                                  | Scale                                                                             |
-| LMB                               | Drag end point in line direction | Scale                                       |                                     |
-| LMB                               | Drag center point                | Scale along axis                            |                                     |
-| With partially masked mesh        | Hold Ctrl and LMB                | Drag center point                           | Create Edgeloop and deflate/inflate |
-| r                                 |                                  | Rotate                                                                            |
-| LMB                               | Drag other end point             | Rotate around end point                     |                                     |
-| LMB                               | Drag center                      | Rotate around action line                   |                                     |
-| Alt                               | LMB                              | Drag end point (rotation around same point) | Joint bend                          |
+
+|                                   |                                  |                                             |                                     | 
+|-----------------------------------|----------------------------------|---------------------------------------------|-------------------------------------| 
+| w                                 |                                  |                                             | Move mode                           | 
+| LMB                               | Drag center                      |                                             | Move                                | 
+| Ctrl                              | LMB                              | Drag center                                 | Duplicate mesh                      | 
+| Alt                               | LMB                              | Drag center or end point                    | Bend mesh                           | 
+| Drag end point furthest from mesh |                                  |                                             | Stretch mesh                        | 
+| Drag end point next to mesh       |                                  |                                             | Flatten mesh                        | 
+| RMB                               | Drag end ring furthest from mesh |                                             | Inflate                             | 
+| With partially masked mesh        | Hold Ctrl and LMB                | Drag center point                           | Create Edgeloop & extrude           | 
+| e                                 |                                  |                                             | Scale                               | 
+| LMB                               | Drag end point in line direction |                                             | Scale                               | 
+| LMB                               | Drag center point                |                                             | Scale along axis                    | 
+| With partially masked mesh        | Hold Ctrl and LMB                | Drag center point                           | Create Edgeloop and deflate/inflate | 
+| r                                 |                                  |                                             | Rotate                              | 
+| LMB                               | Drag other end point             |                                             | Rotate around end point             | 
+| LMB                               | Drag center                      |                                             | Rotate around action line           | 
+| Alt                               | LMB                              | Drag end point (rotation around same point) | Joint bend                          | 
 
 ### Sculpting and Painting
 |   |                                 |
@@ -180,6 +181,7 @@ These actions apply to the inner red or white rings of the action line. The term
 
 #### Dynamesh
 In Edit > Draw mode
+
 |      |                 |                        |
 |------|-----------------|------------------------|
 | Ctrl | Drag Background | Remesh Dynamesh sculpt |
@@ -308,27 +310,32 @@ In Edit > Draw mode
 | Shift | LMB | On Layer thumbnail | Toggle all layers on/off | 
 
 (US)
+
 |   |            |                                             | 
 |---|------------|---------------------------------------------| 
 | ~ | LMB canvas | Select layer on which clicked pixol resides | 
 
 (UK)
+
 |   |              |                                             | 
 |---|--------------|---------------------------------------------| 
 | @ | Click canvas | Select layer on which clicked pixol resides | 
 
 (US)
+
 |   |      |                                              | 
 |---|------|----------------------------------------------| 
 | ~ | Drag | Move layer contents up/down/sideways (X & Y) | 
 
 (UK)
+
 |   |      |                                              | 
 |---|------|----------------------------------------------| 
 | @ | Drag | Move layer contents up/down/sideways (X & Y) | 
 
 #### Markers
 Markers will only show when Edit is turned off
+
 |      |   |               |
 |------|---|---------------|
 | Ctrl | m | Remove Marker |
@@ -354,15 +361,16 @@ Markers will only show when Edit is turned off
 | Shift                         | LMB on all the key frames dots to be copied              |  then Shift              | Click the Timeline | Copy multiple key frames             |
 
 At the point where you want the copies
-|       |                            |                                  |                                         |
-|-------|----------------------------|----------------------------------|-----------------------------------------|
-| Ctrl  |                            | LMB on an existing key frame dot | Create Transition key frame             |
-| Alt   |                            | LMB on an existing key frame dot | Create Rigid key frame                  |
-| ←     |                            |                                  | Go to Previous Camera key frame         |
-| →     |                            |                                  | Go to Next Camera key frame             |
-| Shift | LMB on the Timeline cursor |                                  | Play the Timeline (will play as a loop) |
-| LMB   | Esc                        |                                  | Stop the Timeline playing               |
-| Shift | Ctrl                       | LMB on the Timeline cursor       | Record Timeline as a Movie              |
+
+|       |                                  |                               |                                         |
+|-------|----------------------------------|-------------------------------|-----------------------------------------|
+| Ctrl  | LMB on an existing key frame dot |                               | Create Transition key frame             |
+| Alt   | LMB on an existing key frame dot |                               | Create Rigid key frame                  |
+| ←     |                                  |                               | Go to Previous Camera key frame         |
+| →     |                                  |                               | Go to Next Camera key frame             |
+| Shift | LMB on the Timeline cursor       |                               | Play the Timeline (will play as a loop) |
+| LMB   | Esc                              |                               | Stop the Timeline playing               |
+| Shift | Ctrl                             | LMB on the Timeline cursor    | Record Timeline as a Movie              |
 
 (set the cursor to the start first using the ←)
 
@@ -370,9 +378,7 @@ At the point where you want the copies
 |       |       |        |                   |
 |-------|-------|--------|-------------------|
 | Ctrl  | Shift |        |                   |
-| (US)  |       |        |                   |
 |       |       | !      | Snapshot to Movie |
-| (UK)  |       |        |                   |
 |       |       | PageUp | Snapshot to Movie |
 
 ### Render
@@ -383,13 +389,13 @@ At the point where you want the copies
 | Ctrl  | r    |   | Cursor Selective Render   |
 
 ### Custom UI and Configuration
-|       |      |                                              |   |                                        |                                            |
-|-------|------|----------------------------------------------|---|----------------------------------------|--------------------------------------------|
-| Ctrl  | Alt  | Drag (when Enable Customize is switched on)  |   | Move item to custom interface position |                                            |
-| Ctrl  | Alt  | Drag to Canvas (when Enable Customize is on) |   |                                        | Remove item from custom interface position |
-| Shift | Ctrl | i                                            |   |                                        | Store Configuration File                   |
-| Ctrl  | l    |                                              |   | Load User Interface Configuration File |                                            |
-| Shift | Ctrl | Alt                                          | i | Save User Interface Configuration File |                                            |
+|       |      |                                              |   |                                            |
+|-------|------|----------------------------------------------|---|--------------------------------------------|
+| Ctrl  | Alt  | Drag (when Enable Customize is switched on)  |   | Move item to custom interface position     |
+| Ctrl  | Alt  | Drag to Canvas (when Enable Customize is on) |   | Remove item from custom interface position |
+| Shift | Ctrl | i                                            |   | Store Configuration File                   |
+| Ctrl  | l    |                                              |   | Load User Interface Configuration File     |
+| Shift | Ctrl | Alt                                          | i | Save User Interface Configuration File     |
 
 #### ZScripts
 |       |      |   |                          |
